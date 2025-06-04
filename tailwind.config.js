@@ -12,6 +12,20 @@ module.exports = {
         oswald: ["oswald"],
         inter: ["inter"],
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+        wiggle: "wiggleKey 1s ease-in-out",
+      },
+      keyframes: {
+        wiggleKey: {
+          "0%, 100%": {
+            transform: "rotate(-3deg)",
+          },
+          "50%": {
+            transform: "rotate(3deg)",
+          },
+        },
+      },
     },
   },
   plugins: [],
